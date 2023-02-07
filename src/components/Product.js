@@ -6,9 +6,9 @@ import ShoppingButton from "./ShoppingButton";
 export default function Product({name, cat, price}){
     return (
         <article className="product-card">
-            <ProductTitle name="Dragon Zane"  />
-            <ProductCategory cat="Ninjago" />
-            <ProductPrice price="89 kr" />
+            <ProductTitle name={name}  />
+            <ProductCategory cat={cat} />
+            <ProductPrice price={price} />
             <ShoppingButton />
         </article>
     )
