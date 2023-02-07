@@ -46,8 +46,6 @@ body{
     margin: 0 auto;
     
     .content{
-        
-        
         .product-card {
             @include default-box(#fff, 300px, $legoblack, 1rem);
             
