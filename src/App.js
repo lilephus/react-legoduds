@@ -5,7 +5,6 @@ import Nav from './components/Nav';
 import './css/main.css'
 
 
-
 function App() {
   return (
     <div className="container">

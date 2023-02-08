@@ -1,6 +1,7 @@
-export default function ShoppingCart(){
+export default function ShoppingCart({active}){
+
     return (
-        <section id="cartview" className="hidden">
+        <section id="cartview" className={active ? null : "hidden"}>
             <h3>Din handlevogn</h3>
             <ul>
                 <li>Din handlevogn er tom.</li>

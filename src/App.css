@@ -52,7 +52,7 @@
 
 body {
     background-color: var(--yellow);
-    background-image: url('images/mainbackground.png');
+    background-image: url('../public/images/mainbackground.png');
     font-family: 'Rubik', sans-serif;
     font-size: var(--rootsize);
     margin-top: 0;
