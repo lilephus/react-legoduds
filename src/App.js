@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import './App.css'
 import ContentPage from './components/ContentPage';
 import Header from './components/Header';
@@ -13,13 +14,15 @@ const cartStart = [
 ]
 
 function App() {
-const [cartItems, setCartItem] = useState([...cartStart])
+const [cartItem, setCartItem] = useState([...cartStart])
+const [amount, setAmount] = useState(0)
+const[id, setId] = useState(0)
 
   return (
     <div className="container">
-        <Header/>
+        <Header cartItem={cartItem amount={amount}id={id}}/>
         <Nav />
-        <ContentPage cartItems= {cartItems} setCartItem= {SetCartItem}/>
+        <ContentPage cartItem= {cartItem} setCartItem= {setCartItem} setAmount={setAmount}/>
     </div>
   );
 }
